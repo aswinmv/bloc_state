@@ -1,7 +1,7 @@
 # bloc_tutorial
 
 A new Flutter project.
-
+![Bloc Image](https://codeclusive.io/blog/introduction-to-flutter-bloc/images/bloc.png)
 Sure, here's a simple README file for a project titled "Bloc State Management in Flutter":
 
 
