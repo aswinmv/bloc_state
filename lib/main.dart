@@ -1,4 +1,5 @@
 import 'package:bloc_tutorial/counter_bloc/counter_bloc.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -47,7 +48,7 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print("buldmethod");
+
 
     return Scaffold(
       appBar: AppBar(
@@ -70,7 +71,9 @@ class MyHomePage extends StatelessWidget {
             ),
             BlocBuilder<CounterBloc, CounterState>(
               builder: (context, state) {
-                print("blocbuild");
+                if (kDebugMode) {
+                  print("blocbuild");
+                }
                 return Text(
                   state.counter.toString(),
                   style: Theme.of(context).textTheme.headlineMedium,
