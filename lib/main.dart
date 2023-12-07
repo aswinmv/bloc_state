@@ -72,7 +72,7 @@ class MyHomePage extends StatelessWidget {
             BlocBuilder<CounterBloc, CounterState>(
               builder: (context, state) {
                 if (kDebugMode) {
-                  print("blocbuilddddd");
+                  print("blocbuild");
                 }
                 return Text(
                   state.counter.toString(),
